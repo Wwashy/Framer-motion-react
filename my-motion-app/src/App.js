@@ -9,20 +9,21 @@ import Mychart from './components/Mychart';
 function App() {
   return (
     <>
-      <div style={{ width: "100%", backgroundColor: "teal", height: "10vh", margin: "0",padding:"10px" }}>
+      <div className="nav" style={{ width: "100%", backgroundColor: "teal", height: "10vh", margin: "0",padding:"10px",color:"white" }}>
         <Link to='/'><span>home</span></Link>
         <Link to="/about"> <span>about</span></Link>
         <Link to="/contact"> <span>contact</span></Link>
         <Link to="/chart"> <span>chart</span></Link>
       </div>
       <div>
-        <Router>
+        <Router style={{height:"90vh"}}>
           <Home path="/" />
           <About path="/about" />
           <Contact path="/contact" />
           <Mychart path="/chart"/>
         </Router>
-      </div>
+        </div>
+
     </>
   );
 }

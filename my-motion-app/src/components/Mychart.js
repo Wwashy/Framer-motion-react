@@ -119,7 +119,7 @@ export class Mychart extends Component {
 
     render() {
         return (
-            <div style={{width:"100%",display:"flex",flexDirection:"row",justifyContent:"space-evenly"}}>
+            <div style={{width:"100%",display:"flex",flexDirection:"row",justifyContent:"space-evenly",flexWrap:"wrap"}}>
                 <div style={{width:"400px"}}> <canvas ref={this.chartref1} width="400px" height="400px"></canvas></div>
                  <div style={{width:"400px"}}><canvas ref={this.chartref2} width="400px" height="400px"></canvas></div>
                 <div style={{width:"400px"}}><canvas ref={this.chartref3} width="400px" height="400px"></canvas></div>
